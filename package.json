@@ -10,10 +10,11 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
-    "bootstrap": "^5.0.0",
+    "bootstrap": "^5.0.1",
     "bootstrap-vue": "^2.21.2",
     "build": "^0.1.4",
     "core-js": "^3.6.5",
+    "express": "^4.17.1",
     "vue": "^2.6.12",
     "vue-axios": "^3.2.4",
     "vue-router": "^3.2.0"
@@ -46,5 +47,21 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "description": "## Project setup ``` npm install ```",
+  "main": "babel.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DiegoQuiroga/Vue_Appgricola.git"
+  },
+  "keywords": [
+    "Vuejs",
+    "Frontend"
+  ],
+  "author": "Diego Quiroga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DiegoQuiroga/Vue_Appgricola/issues"
+  },
+  "homepage": "https://github.com/DiegoQuiroga/Vue_Appgricola#readme"
 }
