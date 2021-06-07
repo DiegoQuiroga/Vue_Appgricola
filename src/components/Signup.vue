@@ -61,7 +61,7 @@ export default {
                 'id_PP' : this.id_PP,
                 'rol' : this.rol
             }
-            axios.post('http://localhost:3000/singup',data)
+            axios.post('https://app-agricola.herokuapp.com/singup',data)
             .then(res =>{
                 console.log(res)
                 
@@ -84,12 +84,12 @@ export default {
                 'rol' : this.rol
 
             }
-        axios.get('http://localhost:3000/getproductos',data)
+        axios.get('https://app-agricola.herokuapp.com/getproductos',data)
         .then(res=>{
             this.productos=res.data
         })
      
-        axios.get('http://localhost:3000/getroles',data)
+        axios.get('https://app-agricola.herokuapp.com/getroles',data)
         .then(res=>{
             this.Roles=res.data
         })
