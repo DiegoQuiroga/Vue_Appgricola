@@ -41,7 +41,7 @@
                     'cc' : this.cc,
                     //'busqueda' :this.busqueda
                  }
-                 axios.post('http://localhost:3000/setusuarios/modificar', data,{
+                 axios.post('https://back-app-agricola.herokuapp.com/setusuarios/modificar', data,{
                  }).then(res=>{
                     // this.usuarios=res.data
                     console.log(res)
@@ -52,7 +52,7 @@
                     'correo' : this.correo,
                     'busqueda' :this.busqueda
                  }
-                 axios.get('http://localhost:3000/getusuario', data,{
+                 axios.get('https://back-app-agricola.herokuapp.com/getusuario', data,{
                  }).then(res=>{
                      this.usuario=res.data
                  })
@@ -65,7 +65,7 @@
                 'cc' : this.cc,
 
             }
-            axios.get('http://localhost:3000/getusuarios',data)
+            axios.get('https://back-app-agricola.herokuapp.com/getusuarios',data)
             .then(res=>{
                 this.usuarios=res.data
             })

@@ -33,7 +33,7 @@
                     'correo' : this.correo,
                     'clave' : this.clave
                 }
-                axios.post('https://app-agricola.herokuapp.com/login', this.data,{
+                axios.post('https://back-app-agricola.herokuapp.com/login', this.data,{
                     headers : this.headers
                 })
                 .then(res =>{

@@ -48,7 +48,7 @@ export default {
                 'clave' : this.clave,
                 'cc' : this.cc
             }
-            axios.post('https://app-agricola.herokuapp.com/login',data)
+            axios.post('https://back-app-agricola.herokuapp.com/login',data)
             .then(res =>{
                 console.log(res)
                 if(res.data.codigo == 0){

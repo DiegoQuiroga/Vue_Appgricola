@@ -66,7 +66,7 @@ export default {
                 'id_PP' : this.id_PP,
                 'rol' : this.rol
             }
-            axios.post('https://app-agricola.herokuapp.com/signup',data)
+            axios.post('https://back-app-agricola.herokuapp.com/signup',data)
             .then(res =>{
                 console.log(res)
                 
@@ -86,7 +86,7 @@ export default {
                 'clave' : this.clave,
                 'cc' : this.cc,
                 }
-                axios.get('https://app-agricola.herokuapp.com/getusuarios',data)
+                axios.get('https://back-app-agricola.herokuapp.com/getusuarios',data)
                 .then(res=>{
                 this.usuarios=res.data
                 })
@@ -103,7 +103,7 @@ export default {
             var data = {
                 'correo' : correoeliminar,
                 }
-                axios.post('https://app-agricola.herokuapp.com/setusuarios/eliminar',data)
+                axios.post('https://back-app-agricola.herokuapp.com/setusuarios/eliminar',data)
                 .then(res=>{
                 //this.usuarios=res.data
                 alert(res.data.mensaje)
@@ -120,7 +120,7 @@ export default {
                 'rol' : this.rol*/
 
             }
-        axios.post('https://app-agricola.herokuapp.com/getusuario',data)
+        axios.post('https://back-app-agricola.herokuapp.com/getusuario',data)
         .then(res=>{
             this.usuario=res.data
             this.rol = res.data.rol 
@@ -128,14 +128,14 @@ export default {
              data = {
                 'codigo' : this.rol
             }
-            axios.post('https://app-agricola.herokuapp.com/getrol',data)
+            axios.post('https://back-app-agricola.herokuapp.com/getrol',data)
         .then(res=>{
             this.tipousuario=res.data.tipo
 
               data = {
                 'id_PP' : this.id_PP
             }|
-            axios.post('https://app-agricola.herokuapp.com/getproducto',data)
+            axios.post('https://back-app-agricola.herokuapp.com/getproducto',data)
         .then(res=>{
             this.tipopp=res.data.Nombre
         })
